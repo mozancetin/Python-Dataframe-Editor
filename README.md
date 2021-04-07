@@ -11,5 +11,10 @@ You need to install some modules:
 <br/>
 `pip install openpyxl`
 <br/>
+# Supported File Types
+- CSV File (*.csv)
+- JSON File (*.json)
+- Excel File (*.xlsx)
+
 # Program
 ![Image of Program](img1.png)
