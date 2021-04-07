@@ -14,7 +14,6 @@ class Editor(QtWidgets.QWidget):
 
 
     def editor_ui(self):
-        self.fileText = QtWidgets.QLabel("File")
         self.searchBar = QtWidgets.QLineEdit()
         self.searchBar.setReadOnly(True)
         self.getDataFrameButton = QtWidgets.QPushButton("Select Dataframe")
