@@ -10,3 +10,6 @@ You need to install some modules:
 `pip install pyqt5-tools`
 <br/>
 `pip install openpyxl`
+<br/>
+# Program
+![Image of Program](img1.png)
