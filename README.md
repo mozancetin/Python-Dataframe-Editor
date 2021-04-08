@@ -1,5 +1,5 @@
 # Python-Dataframe-Editor
-Very simple application for delete columns in a dataframe. 
+Very simple application for delete columns in a dataframe and simply create test dataframe. 
 
 # Requirements
 
