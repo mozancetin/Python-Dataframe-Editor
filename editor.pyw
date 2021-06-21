@@ -30,8 +30,6 @@ class Worker(QObject):
             self.newDf.emit(self.dfTest)
             self.finished.emit()
 
-
-
 class TestWindow(QtWidgets.QWidget):
 
     numberOfTests = pyqtSignal(int)
@@ -79,7 +77,6 @@ class Editor(QtWidgets.QWidget):
         self.canSave = False
         self.editor_ui()
 
-
     def editor_ui(self):
         self.searchBar = QtWidgets.QLineEdit()
         self.searchBar.setReadOnly(True)
@@ -126,6 +123,7 @@ class Editor(QtWidgets.QWidget):
     def selectTestNumber(self):
         if not self.canSave:
             return False
+        
         self.secondWindow = TestWindow(maxValue=int(self.df.shape[0] * 1 / 5))
         self.secondWindow.show()
     
@@ -209,7 +207,6 @@ class Editor(QtWidgets.QWidget):
         for i in range(len(self.df.columns)):
             self.columns.insertItem(i, self.df.columns[i])
         self.columns.repaint()
-            
 
     def deleteColumn(self):
         if self.columns.currentItem() != None:
